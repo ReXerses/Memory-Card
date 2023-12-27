@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Footer from './Footer';
 import Header from './Header';
-import { carte } from './assets/dati';
+import ModaleStartGame from './ModaleStartGame';
+import Game from './Game';
 
 
 function App() {
   const [isPlaying, setIsPlaying] = useState (true);
+  const [isStarted, setIsStarted] = useState (false);
 
   useEffect(() => {
     // Una volta che la pagina è stata caricata
@@ -22,10 +24,6 @@ function App() {
     }
   }, [isPlaying]);
 
-  function gestisciIsPlaying () {
-    setIsPlaying(!isPlaying);
-  }
-
   return (
     <>
       <Header isPlaying={isPlaying}  gestisciIsPlaying={() => setIsPlaying(!isPlaying)} />
@@ -37,6 +35,13 @@ function App() {
       <video autoPlay muted loop id="myVideo">
         <source src="/background.mp4" type="video/mp4" />
       </video>
+
+      {(!isStarted) ?
+        <ModaleStartGame gestisciIsStarted= {() => setIsStarted(!isStarted)} />
+      
+      : 
+        <Game/>
+      }
       
       <Footer/>
     </>

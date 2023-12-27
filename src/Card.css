@@ -1,0 +1,32 @@
+.carta {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: clamp(120px,12vw,12rem);
+    height: 18rem;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-image: conic-gradient(#7e1717 80%, #303030 88%, #303030 92%, #7e1717 100%) 1;
+    cursor: url(/cursor-point.png), pointer;
+  }
+
+  .carta:hover {
+    transform: scale(1.05);
+  }
+
+.nomeCarta {
+    background: rgb(20 17 17 / 72%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    letter-spacing: 0.10rem;
+    font-size: clamp(15px,0.93vw,3rem);
+    margin: 0px;
+    padding: 8px;
+    border-bottom: 1px solid #702828;
+}
+
+.imgCarta {
+    flex: 1;
+    max-width: 100%; /* Imposta la larghezza massima al 100% */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere l'aspetto originale */
+}

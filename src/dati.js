@@ -45,12 +45,6 @@ export const carte = [
     },
     {
         id: uuidv4(),
-        nome: 'Abdul Alhazred',
-        img: '/cards/Abdul Alhazred.jpeg',
-        clicked: false,
-    },
-    {
-        id: uuidv4(),
         nome: 'Herbert West',
         img: '/cards/Herbert West.jpeg',
         clicked: false,
@@ -59,12 +53,6 @@ export const carte = [
         id: uuidv4(),
         nome: 'Kingsport',
         img: '/cards/Kingsport.jpeg',
-        clicked: false,
-    },
-    {
-        id: uuidv4(),
-        nome: 'Abdul Alhazred',
-        img: '/cards/Abdul Alhazred.jpeg',
         clicked: false,
     },
     {
@@ -81,7 +69,7 @@ export const carte = [
     },
     {
         id: uuidv4(),
-        nome: 'Shub-Niggurath',
+        nome: 'Shub Niggurath',
         img: '/cards/Shub-Niggurath.jpeg',
         clicked: false,
     },
@@ -105,7 +93,7 @@ export const carte = [
     },
     {
         id: uuidv4(),
-        nome: 'Yog-Sothoth',
+        nome: 'Yog Sothoth',
         img: '/cards/Yog-Sothoth.jpeg',
         clicked: false,
     },
