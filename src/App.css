@@ -14,7 +14,6 @@ body {
 }
 
 video {
-  /** Simulationg background-size: cover */
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -96,8 +95,8 @@ a img {
 .finestraModale {
   display: flex;
   flex-direction: column;
-  width: 20rem;
-  padding: 5rem;
+  width: 13rem;
+  padding: 2rem;
   gap: 2rem;
   color: white;
   font-size: clamp(20px,3vw,4rem);

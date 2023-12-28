@@ -40,7 +40,7 @@ function App() {
         <ModaleStartGame gestisciIsStarted= {() => setIsStarted(!isStarted)} />
       
       : 
-        <Game/>
+        <Game />
       }
       
       <Footer/>

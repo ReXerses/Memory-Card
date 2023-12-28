@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column;
     color: white;
-    width: clamp(120px,12vw,12rem);
+    width: clamp(136px,12vw,12rem);
     height: 18rem;
     box-sizing: border-box;
     border: 2px solid;
@@ -27,6 +27,6 @@
 
 .imgCarta {
     flex: 1;
-    max-width: 100%; /* Imposta la larghezza massima al 100% */
-    height: auto; /* Imposta l'altezza automaticamente per mantenere l'aspetto originale */
+    max-width: 100%; 
+    height: auto; 
 }
